@@ -18,6 +18,7 @@ public class DeleteAction extends HttpServlet {
         int userid = Integer.parseInt(request.getParameter("userid"));
         new UserinfosDAO().deleteUser(userid);
         response.sendRedirect("init");
+		doPost(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
