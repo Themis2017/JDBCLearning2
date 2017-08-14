@@ -17,6 +17,7 @@ public class InitAction extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("users",new UserinfosDAO().findAll());
         request.getRequestDispatcher("index.jsp").forward(request,response);
+		yyyy
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
